@@ -59,7 +59,7 @@ class Home_Away(models.Model):
         ("Tiara", "Tiara"),
         ("Stefaun", "Stefaun")
     ]
-    week_number = models.IntegerField(default=2)
+    week_number = models.IntegerField(default=4)
     
     away_team = models.CharField(max_length=100, choices=TEAMS, default='')
     home_team = models.CharField(max_length=100, choices=TEAMS, default='')
