@@ -14,8 +14,8 @@ class TimeInput(forms.TimeInput):
 class HomeAwayForm(forms.ModelForm):
     class Meta:
         model = Home_Away
-        fields = ['week_number', 'home_team',
-                  'away_team', 'startdate', 'starttime']
+        fields = ['week_number', 'away_team',
+                  'home_team', 'startdate', 'starttime']
         widgets = {'startdate': DateInput(), 'starttime': TimeInput()}
 
 

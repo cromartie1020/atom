@@ -5,7 +5,7 @@ from django.utils import timezone
 
 class Team(models.Model):
     name = models.CharField(max_length=100, unique=True)
-
+    
     class Meta:
         ordering = ['name']
 
@@ -35,18 +35,18 @@ class Home_Away(models.Model):
         ('Los Angeles Charges', 'Los Angeles Charges'),
         ('los Angeles Rams', 'Los Angeles Rams'),
         ('Miami Dolphins', 'Miami Dolphins'),
-        ('Minnesota Vikings', 'Minesota Vikings'),
+        ('Minnesota Vikings', 'Minnesota Vikings'),
         ('New Orleans Saints', 'New Orleans Saints'),
         ('New England Patriots', 'New England Patriots'),
         ('New York Giants', 'New York Giants'),
         ('New York Jets', 'New York Jets'),
-        ('Philadelphis Eagles', 'Philadelphia Eagles'),
+        ('Philadelphia Eagles', 'Philadelphia Eagles'),
         ('Pittsburgh Steelers', 'Pittsburgh Steelers'),
         ('San Francisco 49ers', 'San Francisco 49ers'),
         ('Seatle Seahawks', 'Seatle Seahawks'),
         ('Tampa Bay Buccaneers', 'Tampa Bay Buccaneers'),
         ('Tennessee Titans', 'Tennessee Titans'),
-        ('Washington Football Team', 'Washington Football Team'),
+        ('Washington Commanders', 'Washington Commanders'),
 
 
 
@@ -59,16 +59,17 @@ class Home_Away(models.Model):
         ("Tiara", "Tiara"),
         ("Stefaun", "Stefaun")
     ]
-    week_number = models.IntegerField(default=1)
-    home_team = models.CharField(max_length=100, choices=TEAMS, default='')
+    week_number = models.IntegerField(default=2)
+    
     away_team = models.CharField(max_length=100, choices=TEAMS, default='')
-    #startdate = models.DateField(widget=AdminDateWidget())
-    #starttime = models.DateField(widget=AdminTimeWidget())
-    startdate = models.DateField(editable=True, null=True, blank=True)
+    home_team = models.CharField(max_length=100, choices=TEAMS, default='')
+   
+    startdate = models.DateField(
+        editable=True, null=True, blank=True)
     starttime = models.TimeField(editable=True, null=True, blank=True)
 
     class Meta:
-        ordering = ['-home_team', '-away_team']
+        ordering = ['week_number','startdate','home_team' ]
 
     def __str__(self):
         return f'{ self.home_team} and { self.away_team }'

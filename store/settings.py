@@ -32,6 +32,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'football.apps.FootballConfig',
+    'yourteams.apps.YourteamsConfig',
+    'print_week.apps.PrintWeekConfig',
 ]
 
 MIDDLEWARE = [

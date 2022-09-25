@@ -1,9 +1,8 @@
 from django.shortcuts import render, redirect
-
 from .models import Team
 from . forms import HomeAwayForm, TeamForm
-#from django.contrib.admin.widgets import AdminDateWidget, AdminTimeWidget
 from django import forms
+from django.contrib.auth.models import User
 
 
 def home(request):
