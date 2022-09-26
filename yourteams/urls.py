@@ -1,5 +1,5 @@
 from django.urls import path
 from . import views
 urlpatterns = [
-    path('', views.list_home_away, name='teams'),
+    path('', views.select_your_picks, name='picks'),
 ]

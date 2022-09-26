@@ -9,6 +9,7 @@ urlpatterns = [
     path('select/', include('football.urls')),
     path('print_week/',include('print_week.urls')),
     path('teams/', include('yourteams.urls')),
+    path('yourteams/',include('yourteams.urls')),
     path('accounts/', include('allauth.urls')),
 
     path('admin/', admin.site.urls),

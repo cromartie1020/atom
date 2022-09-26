@@ -34,3 +34,16 @@ li {
   list-style-type: none;
 }
 
+/* for select your picks */
+
+.container1 {
+  display: grid;
+  grid-template-columns: 6fr 6fr;
+  max-width: 600px;
+  margin: auto;
+}
+
+.font-height {
+  font-size: large;
+}
+

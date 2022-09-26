@@ -4,6 +4,12 @@
 {% endblock %}
   
 {% block content %} 
+ {% if user.is_authenticated %} 
+  Hello {{ user.username }}!
+ {% else %}
+  Please login or register for a new account.
+ {% endif %} 
+
   <div class="center" >
     <ul>
         {% for home in home_aways %}
