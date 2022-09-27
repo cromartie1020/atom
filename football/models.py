@@ -33,7 +33,7 @@ class Home_Away(models.Model):
         ('Kansas City Chiefs', 'Kansas City Chiefs'),
         ('Las Vegas Raiders', 'Las Vegas Raiders'),
         ('Los Angeles Charges', 'Los Angeles Charges'),
-        ('los Angeles Rams', 'Los Angeles Rams'),
+        ('Los Angeles Rams', 'Los Angeles Rams'),
         ('Miami Dolphins', 'Miami Dolphins'),
         ('Minnesota Vikings', 'Minnesota Vikings'),
         ('New Orleans Saints', 'New Orleans Saints'),

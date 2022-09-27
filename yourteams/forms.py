@@ -1,3 +1,8 @@
 from django import forms
-from football.models import Home_Away
- 
+from .models import WinnerPick
+
+
+class WinnerPickForm(forms.ModelForm):
+    class Meta:
+        model = WinnerPick
+        fields = ['player','week_number','winningPicks']

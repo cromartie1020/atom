@@ -9,5 +9,6 @@ class WinnerPick(models.Model):
     winningPicks = models.CharField(max_length=250)
 
 
-
+    def __str__(self):
+        return self.winningPicks
     
