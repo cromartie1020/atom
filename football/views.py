@@ -50,3 +50,7 @@ def homeawayview(request):
 
 def select_teams(request):
     return render(request, 'football/select_teams.html')
+
+
+def testing(request):
+    return (request,'testing.html' )

@@ -11,3 +11,6 @@ def select_week(request):
     }
 
     return render (request,'football/select_week.html',context )
+
+def testing(request):
+    return render(request,'testing.html')    

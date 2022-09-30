@@ -43,6 +43,13 @@ li {
   margin: auto;
 }
 
+.container2 {
+  display: grid;
+  grid-template-columns: 6fr 6fr;
+  max-width: 960px;
+  margin: auto;
+}
+
 .font-height {
   font-size: large;
 }

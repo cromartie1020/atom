@@ -12,3 +12,4 @@ class WinnerPick(models.Model):
     def __str__(self):
         return self.winningPicks
     
+# Print out the winner selection for the week
