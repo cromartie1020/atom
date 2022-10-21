@@ -7,10 +7,13 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="{% url 'picks' %}">Pick your winners<span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="{% url 'winner' %}">Pick your winners<span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item active">
           <a class="nav-link" href="{% url 'select_week' %}">Home<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="{% url 'homeaway' %}">Generate weekly schedule</a>
         </li>
         <li class="nav-item">
           {% if user.is_authenticated %}

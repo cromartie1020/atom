@@ -6,6 +6,7 @@ from django.contrib.auth.models import User
 
 
 def home(request):
+     
     teams = Team.objects.all()
     form = DateTimeForm()
     return render(request, 'football/select_teams.html', {'teams': teams, 'form': form})

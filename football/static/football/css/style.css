@@ -38,8 +38,8 @@ li {
 
 .container1 {
   display: grid;
-  grid-template-columns: 6fr 6fr;
-  max-width: 600px;
+  grid-template-columns: 4fr 4fr 2fr;
+  max-width: 860px;
   margin: auto;
 }
 
@@ -48,6 +48,9 @@ li {
   grid-template-columns: 6fr 6fr;
   max-width: 960px;
   margin: auto;
+}
+.container3 {
+  max-width: 960px;
 }
 
 .font-height {
