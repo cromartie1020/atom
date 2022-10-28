@@ -13,7 +13,7 @@ STATUS = [
     ("Tie", "Tie")
 ]
 class WinnerPick(models.Model):
-    week_number  = models.IntegerField(null=True)
+    week_number  = models.IntegerField(null=True )
 
     player       = models.CharField(max_length=200, choices=PLAYERS, null=True)
     away = models.CharField(max_length=200, choices =TEAMS, null= True )
@@ -25,7 +25,9 @@ class WinnerPick(models.Model):
     actual_winner = models.CharField(max_length=250, 
     choices=TEAMS, null = True)
     status = models.CharField(max_length=6, null=True, choices=STATUS)
-
+    
+    class Meta:
+        ordering = ['-week_number', 'player'] 
 
     def __str__(self):
         return self.selected_pick

@@ -1,6 +1,6 @@
 PLAYERS = [
-        ("Mom", "Mom"),
+        ("Renee", "Renee"),
         ("Mr. C.", "Mr. C."),
-        ("Tiara", "Tiara"),
-        ("Stefaun", "Stefaun")
+        ("Tiara", "Tiara")
+        #("Stefaun", "Stefaun")
     ]

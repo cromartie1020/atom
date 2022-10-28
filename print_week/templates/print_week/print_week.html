@@ -74,6 +74,14 @@
   </div>
   {% endfor %}
   <div class="center">
+  {% if byes %}
+     Byes:
+    {% for bye in  byes  %}
+      {{ bye }} &nbsp;
+    {% endfor %}
+  {% endif %}
+  </div>
+  <div class="center">
     <b>Tiebreaker:</b>Total Points Scored in Monday Night Football Game. __________
     <br />
     Name___________________________     Total Correct _______________________

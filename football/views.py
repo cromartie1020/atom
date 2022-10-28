@@ -3,7 +3,8 @@ from .models import Team
 from . forms import HomeAwayForm, TeamForm
 from django import forms
 from django.contrib.auth.models import User
-
+from yourteams.models import WinnerPick 
+from players import PLAYERS
 
 def home(request):
      
@@ -53,5 +54,12 @@ def select_teams(request):
     return render(request, 'football/select_teams.html')
 
 
+def print_final(request):
+    winners=WinnerPick.objects.all()
+    context = {
+        "winners":winners,
+        "players":PLAYERS
+    }
+    return render(request, 'football/final.html',context)
 def testing(request):
-    return (request,'testing.html' )
+    return render(request,'testing.html' )

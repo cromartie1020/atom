@@ -13,4 +13,9 @@ def select_week(request):
     return render (request,'football/select_week.html',context )
 
 def testing(request):
+    fname=request.GET.get('fname')
+    lname=request.GET.get('lname')
+    print(fname, lname)
     return render(request,'testing.html')    
+
+    

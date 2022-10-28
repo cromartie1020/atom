@@ -9,7 +9,7 @@ TEAMS = [
         ('Cleveland Browns', 'Cleveland Browns'),
         ('Dallas Cowboys', 'Dallas Cowboys'),
         ('Denver Broncos', 'Denver Broncos'),
-        ('Detroit lions', 'Detroit lions'),
+        ('Detroit Lions', 'Detroit Lions'),
         ('Green Bay Packers', 'Green Bay Packers'),
         ('Houston Texans', 'Houston Texans'),
         ('Indianapolis Colts', 'Indianapolis Colts'),
